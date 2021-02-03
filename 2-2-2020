@@ -1,0 +1,170 @@
+[ntack10@localhost valuenet_environment-master]$ history
+    1  sudo su -
+    2  sudo update-ca-trust force-enable
+    3  sudo curl -o "/etc/pki/ca-trust/source/anchors/csd-rootca.arl.psu.edu_ARL_Root_CA.der" "https://pki.arl.psu.edu/CertEnroll/csd-rootca.arl.psu.edu_ARL%20Root%20CA(1).crt"
+    4  sudo curl -o "/etc/pki/ca-trust/source/anchors/csd-rootca.arl.psu.edu_ARL_Root_CA.der" "http://pki.arl.psu.edu/CertEnroll/csd-rootca.arl.psu.edu_ARL%20Root%20CA(1).crt"
+    5  sudo openssl x509 -inform der -in "/etc/pki/ca-trust/source/anchors/csd-rootca.arl.psu.edu_ARL_Root_CA.der" -outform pem -out "/etc/pki/ca-trust/source/anchors/csd-rootca.arl.psu.edu_ARL_Root_CA.crt"
+    6  sudo update-ca-trust extract
+    7  openssl s_client -showcerts -connect download.postgresql.org:443
+    8  sudo yum check-update
+    9  sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+   10  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   11  sudo yum install docker
+   12  sudo service docker start
+   13  sudo docker run --rm grycap/cowsay
+   14  sudo docker run --name valuenet -d -p 5050:5050 paulfitz/valuenet
+   15  ls
+   16  cd Downloads/
+   17  ls
+   18  cd mlsql-master/
+   19  ls
+   20  cd ..
+   21  ls
+   22  cd ..
+   23  ls
+   24  cd mlsql-master/
+   25  curl -F "sqlite=@companies.sqlite" -F "q=who is the CEO of Omni Cooperative" localhost:5050
+   26  cd ..
+   27  sudo service docker stop
+   28  cd $HOME
+   29  ls
+   30  sudo yum install epel-release
+   31  sudo yum install python-pip
+   32  cd Downloads/
+   33  cd valuenet_environment-master/
+   34  pip install -r requirements.txt
+   35  pipenv install
+   36  pip install pipenv
+   37* pip install pipenv config --global http.sslVerify "fal
+   38  pip install -r requirements.txt config --global http.sslVerify "false"
+   39  pip install -r requirements.txt
+   40  pip install pipenv
+   41  pip install --user pipenv
+   42  curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
+   43  cd ..
+   44  pip install pipenv
+   45  pip install virtualenv
+   46  openssl s_client -showcerts -connect download.postgresql.org:443
+   47  pip install virtualenv
+   48  curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
+   49  pip install virtualenv
+   50  pip install virtualenv config --global http.sslVerify "false"
+   51  pip install config --global http.sslVerify "false" virtualenv
+   52  curl https://raw.githubusercontent.com/pypa/pip/master/contrib/get-pip.py | python2.7 -
+   53  curl htts://raw.githubusercontent.com/pypa/pip/master/contrib/get-pip.py | python2.7 -
+   54  curl http://raw.githubusercontent.com/pypa/pip/master/contrib/get-pip.py | python2.7 -
+   55  curl http://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
+   56  curl http://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python2.7 -
+   57  curl http://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python2.7
+   58  curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python2.7
+   59  cd Downloads/
+   60  cd valuenet_environment-master/
+   61  ls
+   62  pip install -r requirements.txt
+   63  cat requirements.txt
+   64  pip install -r requirements.txt config --global http.sslVerify "false"
+   65  pip install -r requirements.txt config --global http.sslVerify false
+   66  pip install --trusted-host pypi.org -r requirements.txt
+   67  cat requirements.txt
+   68  pip install -r requirements.txt
+   69  pip install -trusted-host pypi.org -r requirements.txt
+   70  pip install --trusted-host pypi.org -r requirements.txt
+   71  pip config list
+   72  pip
+   73  pwd
+   74  ls -l
+   75  vi ARL_Root_CA.crt
+   76  ls ~/Downloads/ARL_Root_CA.crt 
+   77  cp ~/Downloads/ARL_Root_CA.crt .
+   78  cat ARL_Root_CA.crt 
+   79  pip
+   80  pip --cert ARL_Root_CA.crt install -r requirements.txt 
+   81  pip install --upgrade pip
+   82  pip --cert ARL_Root_CA.crt install --upgrade pip
+   83  sudo pip --cert ARL_Root_CA.crt install --upgrade pip
+   84  pip --cert ARL_Root_CA.crt install -r requirements.txt 
+   85  pip --version
+   86  pip -v
+   87  pip
+   88  pip3 --cert ARL_Root_CA.crt install -r requirements.txt
+   89  pip
+   90  ls -l /usr/bin/pip
+   91  /usr/bin/pip
+   92  python
+   93  python -m pip --version
+   94  python
+   95  ls -l ~/Downloads/
+   96  chmod a+x ~/Downloads/
+   97  ls -l ~/Downloads/
+   98  chmod a+x ~/Downloads/get-pip.py 
+   99  ls -l ~/Downloads/
+  100  cp ~/Downloads/get-pip.py .
+  101  sudo ./get-pip.py 
+  102  vi ./get-pip.py 
+  103  sudo ./get-pip.py --cert ARL_Root_CA.crt 
+  104  history
+  105  pip --cert ARL_Root_CA.crt install -r requirements.txt 
+  106  vi requirements.txt 
+  107  pip --cert ARL_Root_CA.crt install abydos==0.5.0
+  108  vi requirements.txt 
+  109  pip
+  110  pip install
+  111  pip help install
+  112  pip --cert ARL_Root_CA.crt install i https://pypi.org/simple abydos==0.5.0
+  113  pip --cert ARL_Root_CA.crt install -i https://pypi.org/simple abydos==0.5.0
+  114  pip --cert ARL_Root_CA.crt install abydos==0.5.0
+  115  pip --cert ARL_Root_CA.crt install i https://pypi.org/simple abydos==0.5.0
+  116  sudo ./get-pip.py 
+  117  vi ./get-pip.py 
+  118  sudo ./get-pip.py pip==8.1.2
+  119  history | grep sudo pip
+  120  history | grep "sudo pip"
+  121  history | grep "sudo ./get-pip"
+  122  sudo ./get-pip.py --cert ARL_Root_CA.crt pip==8.1.2
+  123  pip --cert ARL_Root_CA.crt install -r requirements.txt 
+  124  vi requirements.txt 
+  125  pip --cert ARL_Root_CA.crt install wheel<0.33.0
+  126  pip --cert ARL_Root_CA.crt install 'wheel<0.33.0'
+  127  sudo pip --cert ARL_Root_CA.crt install 'wheel<0.33.0'
+  128  pip --cert ARL_Root_CA.crt install -r requirements.txt 
+  129  setuptools.__version__
+  130  python setuptools.__version__
+  131  python
+  132  sudo pip --cert ARL_Root_CA.crt install setuptools
+  133  vi usr/lib/python2.7/site-packages
+  134  vi /usr/lib/python2.7/site-packages
+  135  ls -l  /usr/lib/python2.7/site-packages
+  136  sudo pip --cert ARL_Root_CA.crt install -U setuptools
+  137  ls -l  /usr/lib/python2.7/site-packages
+  138  ls -l  /usr/lib/python2.7/site-packagessetup*
+  139  ls -l  /usr/lib/python2.7/site-packages/setup*
+  140  ls -l  /usr/lib/python2.7/site-packages/set*
+  141  ls -l  /usr/lib/python2.7/site-packages/
+  142  sudo pip --cert ARL_Root_CA.crt install 'setuptools<0.11.0'
+  143  sudo pip --cert ARL_Root_CA.crt install 'setuptools>0.10.0<0.11.0'
+  144  vi requirements.txt 
+  145  sudo pip --cert ARL_Root_CA.crt install 'setuptools>0.10.0 setuptools<0.11.0'
+  146  sudo pip --cert ARL_Root_CA.crt install '0.10.0<setuptools<0.11.0'
+  147  sudo pip --cert ARL_Root_CA.crt install '0.10.0<setuptools<0.12.0'
+  148  sudo pip --cert ARL_Root_CA.crt install '0.10.0<setuptools<41.0.0'
+  149  sudo pip --cert ARL_Root_CA.crt install 'setuptools==40.6.3'
+  150  pip --cert ARL_Root_CA.crt install -r requirements.txt 
+  151  vi requirements.txt 
+  152  sudo pip --cert ARL_Root_CA.crt install 'setuptools==46.0.0'
+  153  pip --cert ARL_Root_CA.crt install -r requirements.txt 
+  154  sudo pip --cert ARL_Root_CA.crt install 'setuptools==45.3.0'
+  155  pip --cert ARL_Root_CA.crt install -r requirements.txt 
+  156  sudo pip --cert ARL_Root_CA.crt install 'setuptools==44.0.0'
+  157  pip --cert ARL_Root_CA.crt install -r requirements.txt 
+  158  :q
+  159  sudo pip --cert ARL_Root_CA.crt install 'setuptools==42.0.0'
+  160  pip --cert ARL_Root_CA.crt install -r requirements.txt 
+  161  history
+
+
+
+Web pages: https://pypi.org/project/setuptools/#history
+https://github.com/quantopian/zipline/issues/1278
+https://abydos.readthedocs.io/en/latest/intro.html
+https://github.com/pypa/pip/issues/9500
+https://stackoverflow.com/questions/39356413/how-to-add-a-custom-ca-root-certificate-to-the-ca-store-used-by-pip-in-windows
